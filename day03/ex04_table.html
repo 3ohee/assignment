@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table : 테이블(표)</title>
+
+<style type="text/css">
+	table {widows: 600px; text-align: center;}
+	table, th, td {
+	border:  1px solid red;
+	 /* 한줄로 만들기 */
+	border-collapse: collapse; 
+}
+/* 테이블 자체를 가운데 정렬 */
+ table { margin: 50px auto; } /* 0 상하여백 auto 좌우여백 */
+ th,td{padding: 10px}
+ /* td{text-align : center;} */
+
+</style>
+
+</head>
+<body>
+<!-- 
+	table 태그 안에 사용하는 태그
+	thead 태그 : 테이블의 머리글 (생략가능)
+	tbody 태그 : 테이블 본문
+	tfoot 태그 : 테이블의 꼬리글, 생략가능
+	만약에 thead, tbody, tfoot을 사용하지 않으면
+	tbody 안에 만들었다고 판단한다.
+	
+	tr 태그 : 행
+		th, td : tr 태그 안에 존재하는 컬럼
+		th : 보통 컬럼에 사용, ( 굵게, 가운데 정렬이 자동) 
+		td : 일반적인 컬럼에 사용된다.
+		
+	테이블 테두리를 지정하지 않으면 테두리는 나타나지 않는다.
+	너비를 지정하지 않으면 해당 글자가 내용의 크기만 갖는다.
+	
+	
+ -->
+ <table>
+ 	  <thead>
+ 	  	<tr> 
+ 	  		<th>용도</th> <th>중량</th> <th>개수</th> <th>가격</th> 
+ 	  	</tr>
+ 	  </thead>
+ 	  <tbody>
+ 	  	<tr>
+ 	  		<td>선물용</td><td>3kg</td><td>11~16과</td><td>35,000</td>
+ 	  	</tr>
+ 	  	<tr>
+ 	  		<td>선물용</td><td>5kg</td><td>18~26과</td><td>52,000</td>
+ 	  	</tr>
+ 	  	<tr>
+ 	  		<td>가전용</td><td>3kg</td><td>11~16과</td><td>35,000</td>
+ 	  	</tr>
+ 	  	<tr>
+ 	  		<td>가정용</td><td>5kg</td><td>18~36과</td><td>50,000</td>
+ 	  	</tr>
+ 	  </tbody>
+ 	  <tfoot>
+ 	  	<tr>
+ 	  		<td>내용</td><td>내용</td><td>내용</td><td>내용</td>
+ 	  	</tr>
+ 	  </tfoot>
+ 	  
+ 	  
+ 	</table>
+ 
+ <hr>
+ 
+  	<table>
+ 	  <thead>
+ 	  	<tr> 
+ 	  		<th>용도</th> <th>중량</th> <th>개수</th> <th>가격</th> 
+ 	  	</tr>
+ 	  </thead>
+ 	  <tbody>
+ 	  	<tr>
+ 	  		<td>선물용</td><td>3kg</td><td>11~16과</td><td>35,000</td>
+ 	  	</tr>
+ 	  	<tr>
+ 	  		<td>선물용</td><td>5kg</td><td>18~26과</td><td>52,000</td>
+ 	  	</tr>
+ 	  	<tr>
+ 	  		<td>가전용</td><td>3kg</td><td>11~16과</td><td>35,000</td>
+ 	  	</tr>
+ 	  	<tr>
+ 	  		<td>가정용</td><td>5kg</td><td>18~36과</td><td>50,000</td>
+ 	  	</tr>
+ 	  </tbody>
+ 	  <tfoot>
+ 	  	<tr>
+ 	  		<td>내용</td><td>내용</td><td>내용</td><td>내용</td>
+ 	  	</tr>
+ 	  </tfoot>
+ 	  
+ 	  
+ 	</table>
+ 
+ 
+ 
+
+</body>
+</html>
